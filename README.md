@@ -2,9 +2,11 @@
 
 This repository contains documents related to the Cesa Backend Bootcamp.
 
-## Table of Contents
+## Sessions 
 
-- [Golang Basics](Golang-Basics.md)
+- [Session 01 - Go Introduction I](session-01/README.md)
+- Session 02 - Go Introduction II
+- Session 03 - Go Introduction III
 
 ## Useful links for learning
 
