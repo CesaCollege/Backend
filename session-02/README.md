@@ -3,17 +3,17 @@
 In this tutorial, we will cover various essential aspects of the Go programming language (Golang). Golang is known for its simplicity, efficiency, and powerful features, making it a popular choice for building scalable and high-performance applications. We'll explore the following topics:
 
 - [CESA Backend - Session 2](#cesa-backend---session-2)
-  - [1. Structs](#1-structs)
-  - [2. Methods](#2-methods)
-  - [2.5. Embedding](#25-embedding)
-    - [Embedding Syntax](#embedding-syntax)
-    - [Accessing Embedded Fields and Methods](#accessing-embedded-fields-and-methods)
-    - [Method Overriding](#method-overriding)
+  - [1. Structs](#1.%20structs)
+  - [2. Methods](#2%20methods)
+  - [2.5. Embedding](#2.5%20embedding)
+    - [Embedding Syntax](#embedding%20syntax)
+    - [Accessing Embedded Fields and Methods](#accessing%20embedded%20fields%20and%20methods)
+    - [Method Overriding](#method%20overriding)
     - [Anonymous Struct Embedding](#anonymous-struct-embedding)
-  - [3. Exported vs Unexported](#3-exported-vs-unexported)
-  - [4. Package Management](#4-package-management)
-  - [5. Modules](#5-modules)
-  - [6. Interfaces](#6-interfaces)
+  - [3. Exported vs Unexported](#3%20exported%20vs%20unexported)
+  - [4. Package Management](#4%20package%20management)
+  - [5. Modules](#5%20modules)
+  - [6. Interfaces](#6%20interfaces)
 
 ## 1. Structs
 
