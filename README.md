@@ -10,5 +10,11 @@ This repository contains documents related to the Cesa Backend Bootcamp.
 
 ## Useful links for learning
 
+### Learning Golang
+
 - [A Tour of Go](https://go.dev/tour/welcome/1)
 - [Effective Go](https://go.dev/doc/effective_go)
+
+### Data structure and Algorithm
+
+- [LeetCode](https://leetcode.com/) and [NeetCode](https://neetcode.io/)
