@@ -1,4 +1,4 @@
-# session-3
+# Session 3
 
 ## What is concurrency
 
