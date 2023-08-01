@@ -350,7 +350,7 @@ Explain that this query will create a new database named "BookStore" in the DBMS
 CREATE TABLE Books (
   BookID INT PRIMARY KEY,
   Title VARCHAR(100) NOT NULL,
-  Author VARCHAR(50),
+  Author VARCHAR(50) references authors(name),
   PublicationDate DATE,
   ISBN VARCHAR(13) UNIQUE,
   Genre VARCHAR(30),
