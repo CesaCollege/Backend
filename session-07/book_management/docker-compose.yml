@@ -1,0 +1,13 @@
+version: "3"
+services:
+  database:
+    image: "postgres:14.2"
+    volumes:
+      - book_manager_db_data:/var/lib/postgresql/data/
+    env_file:
+      - .env.local
+    ports:
+      - "5432:5432"
+    container_name: book_manager_database
+volumes:
+  book_manager_db_data:
