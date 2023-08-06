@@ -10,6 +10,7 @@ This repository contains documents related to the Cesa Backend Bootcamp.
 - [Session 04 - HTTP](session-04-http/README.md)
 - [Session 05 - Git/SQL I](session-05/sql/README.md)
 - [Session 06 - SQL II](session-06/README.md)
+- [Session 07 - API Design](session-07/README.md)
 
 ## Useful links for learning
 
