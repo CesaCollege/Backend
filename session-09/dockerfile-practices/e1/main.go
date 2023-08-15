@@ -163,7 +163,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			m.delegateKeys.remove.SetEnabled(true)
 			newItem := m.itemGenerator.next()
 			insCmd := m.list.InsertItem(0, newItem)
-			statusCmd := m.list.NewStatusMessage(statusMessageStyle("Added     " + newItem.Title()))
+			statusCmd := m.list.NewStatusMessage(statusMessageStyle("Added " + newItem.Title()))
 			return m, tea.Batch(insCmd, statusCmd)
 		}
 	}
