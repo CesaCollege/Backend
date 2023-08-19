@@ -30,13 +30,13 @@ func main() {
 	if err != nil {
 		logger.WithError(err).Fatal("error in connecting to the postgres database")
 	}
-	logger.Info("connected to the mashgh database")
+	logger.Info("connected to the mashgh database..")
 
 	err = gormDB.CreateSchemas()
 	if err != nil {
 		logger.WithError(err).Fatal("error in database migration")
 	}
-	logger.Infoln("migrate tables and models successfully")
+	logger.Infoln("migrate tables and models successfully...")
 
 	// Create authenticate
 	auth, err := authenticate.NewAuth(gormDB, 10, logger)
