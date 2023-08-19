@@ -1,13 +1,30 @@
 version: "3"
 services:
-  database:
-    image: "postgres:14.2"
+  auth:
+    build: .
+    container_name: book_management
+    ports:
+      - 9090:8080
+    networks:
+      - book-managemanet-net
+    depends_on:
+      - db
+    restart: on-failure
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+  db:
+    image: "postgres:15.2-alpine"
     volumes:
       - book_manager_db_data:/var/lib/postgresql/data/
     env_file:
       - .env.local
-    ports:
-      - "5432:5432"
     container_name: book_manager_database
+    networks:
+      - book-managemanet-net 
 volumes:
   book_manager_db_data:
+
+networks:
+  book-managemanet-net:
