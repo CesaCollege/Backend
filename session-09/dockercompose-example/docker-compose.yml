@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  web1:
+    image: nginx:1.25.1
+    container_name: web1
+    ports:
+      - 8080:80
+    networks:
+      - first-net
+  web2:
+    image: nginx:1.25.1
+    container_name: web2
+    ports:
+      - 8081:80
+    networks:
+      - first-net
+  firstdb:
+    image: postgres:15.2-alpine
+    container_name: db6
+    networks:
+      - first-net
+    environment:
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_USER=sobhan
+    volumes:
+      - firstposdb:/var/lib/postgresql/data
+      # - type: bind
+      #   source: /home/bind
+      #   target: /etc/
+
+networks:
+  first-net:
+
+volumes:
+  firstposdb:
